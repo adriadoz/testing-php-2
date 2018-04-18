@@ -14,5 +14,7 @@ final class SentenceAdder
     public function __invoke($user, $sentence)
     {
         $this->repository->add($user, $sentence);
+
+        return $sentence;
     }
 }
