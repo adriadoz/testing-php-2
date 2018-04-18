@@ -8,8 +8,6 @@ use PHPUnit\Framework\TestCase;
 final class FileSentenceRepositoryTest extends TestCase
 {
     private $repository;
-    private $sentence;
-    private $user;
 
     protected function setUp()
     {
@@ -18,6 +16,7 @@ final class FileSentenceRepositoryTest extends TestCase
         $this->sentences = '{Hola frase, Otra frasw}';
     }
 
+    /** @test */
     public function it_should_get_all_sentences()
     {
         $this->assertEquals($this->sentences, $this->repository->findAll());
