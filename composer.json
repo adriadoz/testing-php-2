@@ -1,8 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "MolaMazoCorporation\\SimpsonsGenerator\\": "src",
-      "MolaMazoCorporation\\SimpsonsGenerator\\Tests": "tests"
+      "MolaMazoCorporation\\SimpsonsGenerator\\": "src/",
+      "MolaMazoCorporation\\SimpsonsGenerator\\Tests\\": "tests/"
     }
   }
 }
