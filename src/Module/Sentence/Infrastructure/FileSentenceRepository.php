@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace MolaMazoCorporation\SimpsonsGenerator\Module\Sentence\Infrastructure;
 
 use MolaMazoCorporation\SimpsonsGenerator\Module\Sentence\Domain\SentenceRepository;
@@ -8,7 +10,6 @@ final class FileSentenceRepository implements SentenceRepository
 {
     private $filePath;
 
-    /** @todo We're chachi... Maybe we should extract the path as a construct param... */
     public function __construct()
     {
         $this->filePath = __DIR__ . '/../../../../database/sentences_database.json';
